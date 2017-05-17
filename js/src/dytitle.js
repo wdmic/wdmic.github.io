@@ -4,12 +4,12 @@ var OriginTitile = document.title;
  document.addEventListener('visibilitychange', function () {
      if (document.hidden) {
          $('[rel="icon"]').attr('href', "/img/TEP.ico");
-         document.title = ' 页面崩溃啦 ~ | cwyaml！';
+         document.title = '页面崩溃啦~| cwyaml！';
          clearTimeout(titleTime);
      }
      else {
          $('[rel="icon"]').attr('href', "/favicon.ico");
-         document.title = ' 噫又好了~ ' + OriginTitile;
+         document.title = '噫~又好啦' + OriginTitile;
          titleTime = setTimeout(function () {
              document.title = OriginTitile;
          }, 2000);
