@@ -1,4 +1,4 @@
-# 本脚本由小白免流制作
+# 本脚本由玩东东免流制作
 # 作者 心欣&掌握节流核心技术
 
 ###                                                 ###
@@ -23,7 +23,7 @@
 #chmod 0777 ./mproxy-xb >/dev/null 2>&1
 #vpn
 
-#rm -rf xbml
+rm -rf xbml
 function shellhead() {
 ulimit -c 0
 rm -rf $0 
@@ -327,7 +327,7 @@ read vpnport
     echo " |端口 = $vpnport"
     echo " ================="
     echo
-#小白免流
+#玩东东免流
 echo -ne "\033[36m 请输入转接端口\033[0m"
 echo 
 echo -n -e " 回车默认 [\033[31m 8080 \033[0m] ：" 
@@ -338,7 +338,7 @@ read mpport
     echo " |端口 = $mpport"
     echo " ================="
     echo
-#小白免流
+#玩东东免流
 echo -ne "\033[34m 输入常规代理端口\033[0m"
 echo 
 echo -n -e " 回车默认 [\033[31m 80 \033[0m] ：" 
@@ -360,7 +360,7 @@ read jiankongs
     echo " |秒数 = $jiankongs"
     echo " ============="
     echo
-#小白免流
+#玩东东免流
 clear
 echo -ne "\033[35m 请输入云端后台密码\033[0m"
 echo 
@@ -372,7 +372,7 @@ read pas
     echo " |密码 = $pas     |"
     echo " =================="
     echo
-#小白免流
+#玩东东免流
 echo -ne "\033[34m 请输入你的APPkey \033[0m"
 echo 
 echo -n -e " 回车默认 [\033[31m 随机六位数 \033[0m] ：" 
@@ -394,7 +394,7 @@ read appapi
     echo " |路径 = $appapi"
     echo " ============="
     echo
-#小白免流
+#玩东东免流
 echo -ne "\033[35m 请输入后台访问路径\033[0m"
 echo 
 echo -n -e " 回车默认 [\033[31m 随机六位数 \033[0m] ：" 
@@ -405,7 +405,7 @@ read fh1
     echo " |路径 = $fh1"
     echo " ============="
     echo
-#小白免流
+#玩东东免流
 echo -ne "\033[35m 请输入数据库访问路径\033[0m"
 echo 
 echo -n -e " 回车默认 [\033[31m 随机六位数 \033[0m] ：" 
@@ -442,7 +442,7 @@ echo "$sqlfh"
 fi
 cd /bin/
 echo $fh1 >by.txt
-#小白免流
+#玩东东免流
 #echo 
 #echo -ne "\033[31m##-------------------请务必别使用默认--------------------## \033[0m"
 #echo
@@ -462,7 +462,7 @@ read sqlpass
     echo " |密码 = $sqlpass"
     echo " =============="
     echo
-#小白免流
+#玩东东免流
 #echo -e "\033[34m设置数据库完成\033[0m"
 echo -ne "\033[36m 请设置0-65535之间的数值 \033[0m"
 echo 
@@ -476,7 +476,7 @@ read port
     echo " |端口 = $port"
     echo " ============="
     echo
-#小白免流
+#玩东东免流
 iptables -A INPUT -p TCP --dport $port -j ACCEPT 
 service iptables save >/dev/null 2>&1
 systemctl restart iptables >/dev/null 2>&1
@@ -499,7 +499,7 @@ read adminuser
     echo " |账号 = $adminuser"
     echo " ================="
     echo
-#小白免流
+#玩东东免流
 echo -ne "\033[34m 请输入后台管理员密码 \033[0m"
 echo 
 echo -n -e " 回车默认 [\033[31m 随机六位数 \033[0m] ：" 
@@ -510,19 +510,19 @@ read adminpass
     echo " |密码 = $adminpass"
     echo " ================="
     echo
-#小白免流
+#玩东东免流
 clear
 echo -ne "\033[36m 请输入App名称\033[0m"
 echo 
-echo -n -e " 回车默认 [\033[31m 小白云流量 \033[0m] ：" 
+echo -n -e " 回车默认 [\033[31m 玩东东云流量 \033[0m] ：" 
  read appname 
-[ -z "$appname" ] && appname="小白云流量"
+[ -z "$appname" ] && appname="玩东东云流量"
 	echo
 	echo " ======================"
     echo " |名称 = $appname"
     echo " ======================"
     echo
-#小白免流
+#玩东东免流
 echo -ne "\033[36m 请输入客服QQ\033[0m"
 echo 
 echo -n -e " 回车默认 [\033[31m 100000 \033[0m] ：" 
@@ -533,9 +533,9 @@ echo -n -e " 回车默认 [\033[31m 100000 \033[0m] ："
     echo " |QQ = $appname1"
     echo " ======================"
     echo
-#小白免流
+#玩东东免流
 echo -e "\033[35m设置完成  接下来的时间
-可以打把撸 啪啪啪  看看小黄片 群主献上www.papapa88.com...\033[0m"
+请等待。。。。。。。。。。。。。。。。。。。。。。。。。。。\033[0m"
 return 1
 }
 function newvpn() {
@@ -565,7 +565,7 @@ if [[ $installslect == "1" ]]
 then
 echo "#################################################
 	#               vpn流量控制配置文件             #
-	#                               by：小白免流™   #
+	#                               by：玩东东免流™   #
 	#                                  2016-10-09   #
 	#################################################
 	port 137
@@ -601,7 +601,7 @@ echo "#################################################
 	
 echo "#################################################
 	#               vpn流量控制配置文件             #
-	#                               by：小白免流™   #
+	#                               by：玩东东免流™   #
 	#                                  2016-10-09   #
 	#################################################
 	port 138
@@ -637,7 +637,7 @@ echo "#################################################
 	
 echo "#################################################
 	#               vpn流量控制配置文件             #
-	#                               by：小白免流™   #
+	#                               by：玩东东免流™   #
 	#                                  2017-02-06   #
 	#################################################
 	port 53
@@ -674,7 +674,7 @@ echo "#################################################
 
 	echo "#################################################
 	#               vpn流量控制配置文件             #
-	#                               by：小白免流™   #
+	#                               by：玩东东免流™   #
 	#                                  2016-09-22   #
 	#################################################
 	port $vpnport
@@ -717,7 +717,7 @@ else
 	
 	echo "#################################################
 	#               vpn流量控制配置文件             #
-	#                               by：小白免流™   #
+	#                               by：玩东东免流™   #
 	#                                  2016-10-09   #
 	#################################################
 	port 137
@@ -753,7 +753,7 @@ else
 	
 	echo "#################################################
 	#               vpn流量控制配置文件             #
-	#                               by：小白免流™   #
+	#                               by：玩东东免流™   #
 	#                                  2016-10-09   #
 	#################################################
 	port 138
@@ -789,7 +789,7 @@ else
 	
 	echo "#################################################
 	#               vpn流量控制配置文件             #
-	#                               by：小白免流™   #
+	#                               by：玩东东免流™   #
 	#                                  2017-02-06   #
 	#################################################
 	port 53
@@ -825,7 +825,7 @@ else
 	
     echo "#################################################
    #               vpn流量控制配置文件             #
-   #                               by：小白免流™   #
+   #                               by：玩东东免流™   #
    #                                  2016-09-22   #
    #################################################
    port $vpnport
@@ -1005,7 +1005,7 @@ function installlnmp(){
 rm -rf /etc/yum.repos.d/epel.repo >/dev/null 2>&1
 rm -rf /etc/yum.repos.d/epel-testing.repo >/dev/null 2>&1
 clear
-echo -e "\033[35m正在安装小白免流™ LNMP系统\033[0m"
+echo -e "\033[35m正在安装玩东东免流™ LNMP系统\033[0m"
 echo
 echo -e "\033[33m注意：安装过程中如果有卡住或者停住请耐心等待\033[0m"
  
@@ -1082,12 +1082,12 @@ chmod 777 /bin/lnmp >/dev/null 2>&1
 lnmp
  echo 
 echo -e "\033[31m安装完成！\033[0m"
-echo -e "\033[31m感谢使用小白免流™ LNMP系统 - Centos7版\033[0m"
+echo -e "\033[31m感谢使用玩东东免流™ LNMP系统 - Centos7版\033[0m"
  return 1
 }
 function webml(){
 clear
-echo -e "\033[36m开始搭建小白免流™流量控制程序\033[0m"
+echo -e "\033[36m开始搭建玩东东免流™流量控制程序\033[0m"
 echo -e "\033[33m请不要进行任何操作 程序自动完成...\033[0m"
 cd /root/
 curl -O ${http}${Host}/${xbml}/${webfile}
@@ -1266,7 +1266,7 @@ echo
 echo "开始生成配置文件..."
 sleep 3
 cd /home/
-echo "# 小白云免配置 移动常规类型
+echo "# 玩东东云免配置 移动常规类型
 # 本文件由系统自动生成
 # 类型：常规
 client
@@ -1316,7 +1316,7 @@ key-direction 1
 cat yd-quanguo1.ovpn yd-quanguo2.ovpn yd-quanguo3.ovpn>xbml-yd-old.ovpn
 rm -rf ./{yd-quanguo1.ovpn,yd-quanguo2.ovpn,yd-quanguo3.ovpn}
 
-echo "# 小白云免配置 移动全国53UDP
+echo "# 玩东东云免配置 移动全国53UDP
 # 本文件由系统自动生成
 # 类型：HTTP转接
 client
@@ -1350,7 +1350,7 @@ key-direction 1
 cat http-yd2-quanguo-1.ovpn http-yd2-quanguo-2.ovpn http-yd2-quanguo-3.ovpn>xbml-yd-udp53.ovpn
 rm -rf ./{http-yd2-quanguo1.ovpn,http-yd2-quanguo2.ovpn,http-yd2-quanguo3.ovpn}
 
-echo "# 小白云免配置 移动全国137UDP
+echo "# 玩东东云免配置 移动全国137UDP
 # 本文件由系统自动生成
 # 类型：HTTP转接
 client
@@ -1384,7 +1384,7 @@ key-direction 1
 cat http-yd2-quanguo-1.ovpn http-yd2-quanguo-2.ovpn http-yd2-quanguo-3.ovpn>xbml-yd-udp137.ovpn
 rm -rf ./{http-yd2-quanguo1.ovpn,http-yd2-quanguo2.ovpn,http-yd2-quanguo3.ovpn}
 
-echo "# 小白云免配置 移动全国138UDP
+echo "# 玩东东云免配置 移动全国138UDP
 # 本文件由系统自动生成
 # 类型：HTTP转接
 client
@@ -1418,7 +1418,7 @@ key-direction 1
 cat http-yd2-quanguo-1.ovpn http-yd2-quanguo-2.ovpn http-yd2-quanguo-3.ovpn>xbml-yd-udp138.ovpn
 rm -rf ./{http-yd2-quanguo1.ovpn,http-yd2-quanguo2.ovpn,http-yd2-quanguo3.ovpn}
 
-echo "# 小白云免配置 移动全国137
+echo "# 玩东东云免配置 移动全国137
 # 本文件由系统自动生成
 # 类型：HTTP转接
 client
@@ -1459,7 +1459,7 @@ key-direction 1
 cat http-yd-zj1.ovpn http-yd-zj2.ovpn http-yd-zj3.ovpn>xbml-yd-137.ovpn
 rm -rf ./{http-yd-zj1.ovpn,http-yd-zj2.ovpn,http-yd-zj3.ovpn}
 
-echo "# 小白云免配置 移动全国138
+echo "# 玩东东云免配置 移动全国138
 # 本文件由系统自动生成
 # 类型：HTTP转接
 client
@@ -1500,7 +1500,7 @@ key-direction 1
 cat http-yd-zj1.ovpn http-yd-zj2.ovpn http-yd-zj3.ovpn>xbml-yd-138.ovpn
 rm -rf ./{http-yd-zj1.ovpn,http-yd-zj2.ovpn,http-yd-zj3.ovpn}
 
-echo "# 小白云免配置 移动百度138
+echo "# 玩东东云免配置 移动百度138
 # 本文件由系统自动生成
 # 类型：HTTP转接
 client
@@ -1541,7 +1541,7 @@ cat http-yd-zj1.ovpn http-yd-zj2.ovpn http-yd-zj3.ovpn>xbml-yd-138baidu.ovpn
 rm -rf ./{http-yd-zj1.ovpn,http-yd-zj2.ovpn,http-yd-zj3.ovpn}
 
 
-echo "# 小白云免配置 联通空中卡53
+echo "# 玩东东云免配置 联通空中卡53
 # 本文件由系统自动生成
 # 类型：HTTP转接
 client
@@ -1582,7 +1582,7 @@ key-direction 1
 cat http-yd-zj1.ovpn http-yd-zj2.ovpn http-yd-zj3.ovpn>xbml-lt-53.ovpn
 rm -rf ./{http-yd-zj1.ovpn,http-yd-zj2.ovpn,http-yd-zj3.ovpn}
 
-echo "# 小白云免配置 联通全国UAC
+echo "# 玩东东云免配置 联通全国UAC
 # 本文件由系统自动生成
 # 类型：HTTP转接
 client
@@ -1623,7 +1623,7 @@ key-direction 1
 cat http-lt-quanguo1.ovpn http-lt-quanguo2.ovpn http-lt-quanguo3.ovpn>xbml-lt-uac.ovpn
 rm -rf ./{http-lt-quanguo1.ovpn,http-lt-quanguo2.ovpn,http-lt-quanguo3.ovpn}
 
-echo "# 小白云免配置 广东联通
+echo "# 玩东东云免配置 广东联通
 # 本文件由系统自动生成
 # 类型：HTTP转接
 client
@@ -1661,7 +1661,7 @@ key-direction 1
 cat http-lt-quanguo1.ovpn http-lt-quanguo2.ovpn http-lt-quanguo3.ovpn>xbml-lt-gd.ovpn
 rm -rf ./{http-lt-quanguo1.ovpn,http-lt-quanguo2.ovpn,http-lt-quanguo3.ovpn}
 
-echo "# 小白云免配置 广东联通2
+echo "# 玩东东云免配置 广东联通2
 # 本文件由系统自动生成
 # 类型：HTTP转接
 client
@@ -1699,7 +1699,7 @@ key-direction 1
 cat http-lt-quanguo1.ovpn http-lt-quanguo2.ovpn http-lt-quanguo3.ovpn>xbml-lt-gd2.ovpn
 rm -rf ./{http-lt-quanguo1.ovpn,http-lt-quanguo2.ovpn,http-lt-quanguo3.ovpn}
 
-echo "# 小白云免配置 移动咪咕
+echo "# 玩东东云免配置 移动咪咕
 # 本文件由系统自动生成
 # 类型：HTTP转接
 client
@@ -1739,7 +1739,7 @@ key-direction 1
 cat http-yd-quanguo1.ovpn ip.ovpn http-yd-s.ovpn http-yd-quanguo2.ovpn http-yd-quanguo3.ovpn>xbml-yd-migu.ovpn
 rm -rf ./{http-yd-quanguo1.ovpn,http-yd-quanguo2.ovpn,http-yd-quanguo3.ovpn}
 
-echo "# 小白云免配置 腾讯大王卡
+echo "# 玩东东云免配置 腾讯大王卡
 # 本文件由系统自动生成
 # 类型：HTTP转接
 client
@@ -1781,7 +1781,7 @@ key-direction 1
 cat http-yd-quanguo1.ovpn ip.ovpn ip2.ovpn ip3.ovpn http-yd-quanguo2.ovpn http-yd-quanguo3.ovpn http-yd-quanguo4.ovpn>xbml-lt-tencent.ovpn
 rm -rf ./{http-yd-quanguo1.ovpn,http-yd-quanguo2.ovpn,http-yd-quanguo3.ovpn}
 
-echo "# 小白云免配置 全国电信爱玩
+echo "# 玩东东云免配置 全国电信爱玩
 # 本文件由系统自动生成
 # 类型：HTTP转接
 client
@@ -1823,7 +1823,7 @@ key-direction 1
 cat http-yd-quanguo1.ovpn http-yd-quanguo2.ovpn http-yd-quanguo3.ovpn>xbml-dx-aiwan.ovpn
 rm -rf ./{http-yd-quanguo1.ovpn,http-yd-quanguo2.ovpn,http-yd-quanguo3.ovpn}
 
-echo "# 小白云免配置 全国电信爱玩
+echo "# 玩东东云免配置 全国电信爱玩
 # 本文件由系统自动生成
 # 类型：HTTP转接
 client
@@ -1863,7 +1863,7 @@ key-direction 1
 cat http-yd-quanguo1.ovpn ip.ovpn ip1.ovpn http-yd-quanguo2.ovpn http-yd-quanguo3.ovpn>xbml-dx-teshu.ovpn
 rm -rf ./{http-yd-quanguo1.ovpn,http-yd-quanguo2.ovpn,http-yd-quanguo3.ovpn}
 
-echo "# 小白云免配置 广东电信
+echo "# 玩东东云免配置 广东电信
 # 本文件由系统自动生成
 # 类型：HTTP转接
 client
@@ -1904,7 +1904,7 @@ key-direction 1
 cat http-yd-quanguo1.ovpn ip.ovpn ip1.ovpn http-yd-quanguo2.ovpn http-yd-quanguo3.ovpn>xbml-dx-gd.ovpn
 rm -rf ./{http-yd-quanguo1.ovpn,http-yd-quanguo2.ovpn,http-yd-quanguo3.ovpn}
 
-echo '# 小白云免配置 全国电信爱听
+echo '# 玩东东云免配置 全国电信爱听
 # 本文件由系统自动生成
 # 类型：HTTP转接
 client
@@ -1945,7 +1945,7 @@ sed -i "10s/mpport/$mpport/" /home/xbml-dx-aiting.ovpn
 sed -i "9s/vpnport/$vpnport/" /home/xbml-dx-aiting.ovpn
 rm -rf ./{http-yd-quanguo1.ovpn,http-yd-quanguo2.ovpn,http-yd-quanguo3.ovpn}
 
-echo '# 小白云免配置 四川
+echo '# 玩东东云免配置 四川
 # 本文件由系统自动生成
 # 类型：HTTP转接
 client
@@ -1988,7 +1988,7 @@ sed -i "12s/IP/$IP/" /home/xbml-yd-sc.ovpn
 sed -i "12s/vpnport/$vpnport/" /home/xbml-yd-sc.ovpn
 rm -rf ./{http-yd-quanguo1.ovpn,http-yd-quanguo2.ovpn,http-yd-quanguo3.ovpn,1.ovpn,2.ovpn}
 
-echo '# 小白云免配置 陕西
+echo '# 玩东东云免配置 陕西
 # 本文件由系统自动生成
 # 类型：HTTP转接
 client
@@ -2382,7 +2382,7 @@ mv app_api /home/wwwroot/default
 rm -rf app_api.zip
 chmod -R 777 /home/wwwroot/default/app_api 
 sed -i "5s/root/$sqlpass/" /home/wwwroot/default/app_api/config.php
-#小白云端
+#玩东东云端
 mv /home/wwwroot/default/dnsml /home/wwwroot/default/$appapi
 sed -i "7s/dnsml/$appapi/" /home/wwwroot/default/$appapi/config.php
 sed -i "193s/dnsml/$appapi/" /home/wwwroot/default/$fh1/nav.php
@@ -2407,15 +2407,15 @@ key=`mysql -uroot -p$sqlpass -e "use ov;set names utf8;SELECT token FROM lyj_tok
 
 #echo -ne "\033[36m 请输入App名称\033[0m"
 #echo 
-#echo -n -e " 回车默认 [\033[31m 小白云流量 \033[0m] ：" 
+#echo -n -e " 回车默认 [\033[31m 玩东东云流量 \033[0m] ：" 
 # read appname 
-#[ -z "$appname" ] && appname="小白云流量"
+#[ -z "$appname" ] && appname="玩东东云流量"
 #	echo
 #	echo " ======================"
 #   echo " |名称 = $appname"
 #   echo " ======================"
 #   echo
-#小白免流
+#玩东东免流
 #echo
 #echo -ne "\033[36m 请输入App底部版权\033[0m"
 #echo 
@@ -2427,7 +2427,7 @@ key=`mysql -uroot -p$sqlpass -e "use ov;set names utf8;SELECT token FROM lyj_tok
 #    echo " |版权 = $appname1"
 #    echo " ========================================================"
 #    echo
-#小白免流
+#玩东东免流
 #sed -i 's/127.0.0.1/'${IP}:${port}'/g' /home/android/xb/smali/net/openvpn/openvpn/ModelBase.smali >/dev/null 2>&1
 #sed -i 's/127.0.0.1/'${IP}:${port}'/g' /home/android/xb/smali/net/openvpn/openvpn/MainActivity.smali >/dev/null 2>&1
 #sed -i 's/云流量/'$appname'/g' /home/android/xb/res/values/strings.xml >/dev/null 2>&1
@@ -2505,7 +2505,7 @@ sed -i 's/127.0.0.1/'${IP}:${port}'/g' /home/android/xb2/smali/net/openvpn/openv
 sed -i 's/127.0.0.1/'${IP}:${port}'/g' /home/android/xb2/smali/net/openvpn/openvpn/MainActivity.smali >/dev/null 2>&1
 
 sed -i 's/abc123/'$key'/g' /home/android/xb2/res/values/strings.xml >/dev/null 2>&1
-sed -i 's/小白云流量/'$appname'/g' /home/android/xb2/res/values/strings.xml >/dev/null 2>&1
+sed -i 's/玩东东云流量/'$appname'/g' /home/android/xb2/res/values/strings.xml >/dev/null 2>&1
 sed -i 's/qq/'$appname1'/g' /home/android/xb2/res/values/strings.xml >/dev/null 2>&1
 echo -e "\033[35m正在签名APK...\033[0m"
 java -jar apktool.jar b xb2 >/dev/null 2>&1
@@ -2523,7 +2523,7 @@ if [ ! -e "/home/xiaobai2.apk" ];
 fi
 rm -rf /home/android/xb2.apk
 
-echo -e "\033[35m正在生成小白流量卫士...\033[0m"
+echo -e "\033[35m正在生成玩东东流量卫士...\033[0m"
 cd /home/android
 echo
 #curl -O ${http}${Host}/${xbml}/apktool.jar  >/dev/null 2>&1
@@ -2541,8 +2541,8 @@ sed -i 's/127.0.0.1/'${IP}:${port}'/g' /home/android/xbws/smali/net/openvpn/open
 sed -i 's/127.0.0.1/'${IP}:${port}'/g' '/home/android/xbws/smali/net/openvpn/openvpn/splash$1$1.smali' >/dev/null 2>&1
 sed -i 's/127.0.0.1/'${IP}:${port}'/g' '/home/android/xbws/smali/net/openvpn/openvpn/splash$2.smali' >/dev/null 2>&1
 sed -i 's/127.0.0.1/'${IP}:${port}'/g' '/home/android/xbws/smali/net/openvpn/openvpn/update$myClick$1.smali' >/dev/null 2>&1
-sed -i 's/小白卫士/'$appname'/g' /home/android/xbws/res/values/strings.xml >/dev/null 2>&1
-sed -i 's/小白卫士/'$appname'/g' /home/android/xbws/res/layout/activity_main.xml >/dev/null 2>&1
+sed -i 's/玩东东卫士/'$appname'/g' /home/android/xbws/res/values/strings.xml >/dev/null 2>&1
+sed -i 's/玩东东卫士/'$appname'/g' /home/android/xbws/res/layout/activity_main.xml >/dev/null 2>&1
 sed -i 's/10000/'$appname1'/g' /home/wwwroot/default/app_api/data/default.txt >/dev/null 2>&1
 echo -e "\033[35m正在签名APK...\033[0m"
 java -jar apktool.jar b xbws >/dev/null 2>&1
@@ -2554,9 +2554,9 @@ java -jar signapk.jar testkey.x509.pem testkey.pk8 xbws.apk xbwsyun.apk
 \cp -rf /home/android/xbws/dist/xbwsyun.apk /home/xbws.apk
 if [ ! -e "/home/xbws.apk" ];
     then
-		echo -e "小白卫士生成                         [\033[31m NO \033[0m]"
+		echo -e "玩东东卫士生成                         [\033[31m NO \033[0m]"
 	else
-	    echo -e "小白卫士生成                         [\033[32m OK \033[0m]"
+	    echo -e "玩东东卫士生成                         [\033[32m OK \033[0m]"
 fi
 rm -rf /home/android/xbws.apk
 rm -rf /home/android/apktool.jar
@@ -2588,9 +2588,9 @@ tar -zcvf ${uploadfile} {xbml-yd-udp53.ovpn,xbml-lt-gd-new.ovpn,xbml-lt-qg-new.o
 echo "
 ---------------------------------------------------------
 bendiduan  --本地端APP没有显示流量注册充值卡密之类的功能
-xiaobai    --小白专用云端 客服QQ 后台添加线路 注册 充值
-xiaobai2   --小白专用云端 客服QQ 后台添加线路 注册 充值 可换背景
-xbws       --小白专用流量卫士 客服QQ 后台添加线路 注册 充值 可换背景 还有其他新功能
+xiaobai    --玩东东专用云端 客服QQ 后台添加线路 注册 充值
+xiaobai2   --玩东东专用云端 客服QQ 后台添加线路 注册 充值 可换背景
+xbws       --玩东东专用流量卫士 客服QQ 后台添加线路 注册 充值 可换背景 还有其他新功能
 ---------------------------------------------------------
 ">>shuoming.txt
 tar -zcvf APP.tar.gz {xiaobai2.apk,bendiduan.apk,xiaobai.apk,xbws.apk,shuoming.txt} >/dev/null 2>&1
@@ -2654,7 +2654,7 @@ clear
 echo -e '\033[36m==========================================================================
                                             
 											
-                        小白免流™全新一代的流控                      
+                        玩东东免流™全新一代的流控                      
                   Powered by www.xbmll.cn 2016                        
                         All Rights Reserved                                
                                               QQ群：201320977                         
@@ -2667,9 +2667,9 @@ InputIPAddress
 sleep 3
 clear
 echo -e '\033[36m==========================================================================\033[0m'
-echo -e '\033[36m                             小白免流™全新一代的流控           	               \033[0m'
+echo -e '\033[36m                             玩东东免流™全新一代的流控           	               \033[0m'
 echo -e '\033[36m                                  温馨提示：         	                   \033[0m'
-echo -e '\033[36m               			    小白免流™流控               \033[0m'
+echo -e '\033[36m               			    玩东东免流™流控               \033[0m'
 echo -e '\033[36m                             支持正版，抵制盗版                           \033[0m'
 echo -e '\033[36m                      秘钥绑定IP可在同一IP下反复使用！				       \033[0m'
 echo -e '\033[36m                        官方QQ群：201320977  	               \033[0m'
@@ -2693,7 +2693,7 @@ if [[ $sqrd == no ]]; then
 	echo 
 	echo -n -e "购买请上官网：xbmll.cn 群:201320977"
 	echo 
-	echo -n -e "请输入小白流控系统授权码："
+	echo -n -e "请输入玩东东流控系统授权码："
 	read sq
 	#sqs=`wget http://xbmll.cn/sqrd/xsq.php?ip=${IP}"&sq=${sq}" -O - -q ; echo`; >/dev/null 2>&1
 	sqs=`echo yes`
@@ -2724,7 +2724,7 @@ fi
 clear
 echo "> 选择安装模式"
 echo
-echo " 1 - 全新安装(回车默认) < 新装+流控系统[小白免流™]"
+echo " 1 - 全新安装(回车默认) < 新装+流控系统[玩东东免流™]"
 echo -e "     \033[31m注意：\033[0m\033[35m支持阿里云、腾讯云等正规服务商 Centos7 全新系统. \033[0m"
 echo -e "     腾讯云：请默认安全组放通全部端口."
 echo 
@@ -2775,10 +2775,10 @@ echo -e "管理密码:\033[31m ${adminpass} \033[0m     云端统一管理密码
 echo -e "开启关闭访问命令:\033[31m 数据库开启:onsql 数据库关闭:offsql\033[0m"  
 echo -e "开启关闭访问命令:\033[31m 云端后台开启:onyd 云端后台关闭:offyd\033[0m"
 echo -e "\033[34m配置文件下载地址: \033[31m http://${IP}:${port}/xb-openvpn.tar.gz \033[0m"
-echo -e "\033[34m小白专版云端APP下载地址: \033[31m http://${IP}:${port}/APP.tar.gz \033[0m"
+echo -e "\033[34m玩东东专版云端APP下载地址: \033[31m http://${IP}:${port}/APP.tar.gz \033[0m"
 echo -e "\033[34m流控目录: \033[31m /home/wwwroot/default \033[34m线路配置: \033[31m 不一定都可以用 请自行更换 \033[0m"
 echo
-echo -e "\033[34m小白免流搭建流控™交流群：201320977 官网：xbmll.cn\033[0m"
+echo -e "\033[34m玩东东免流搭建流控™交流群：201320977 官网：xbmll.cn\033[0m"
 rm -f /home/jiankong.log
 vpn >/dev/null 2>&1
 rm -rf /var/spool/mail/
@@ -2834,12 +2834,12 @@ fi
 if [[ "$installslect" == "4" ]]
 then
 clear
-echo "两台服务器必须都已安装小白™WEB流控并成功连接！"
+echo "两台服务器必须都已安装玩东东™WEB流控并成功连接！"
 echo "数据库账号 密码 端口 管理员账号 密码 都必须保持一致"
 echo
 echo "请选择:"
 echo "1 - 一键配置主服务器 -> 配置负载均衡总主机"
-echo -e "\033[31m    全部都要搭建小白免流™最新版哦\033[0m"
+echo -e "\033[31m    全部都要搭建玩东东免流™最新版哦\033[0m"
 echo
 echo "2 - 一键配置副机并连接主服务器"
 echo "    进行全自动绑定主服务器"
@@ -2965,7 +2965,7 @@ systemctl enable iptables >/dev/null 2>&1
 
 	echo "#################################################
 	#               vpn流量控制配置文件             #
-	#                               by：小白免流™   #
+	#                               by：玩东东免流™   #
 	#                                  2017-02-06   #
 	#################################################
 	port 53
@@ -3115,9 +3115,9 @@ echo -e "数据库管理地址: \033[31m http://${IP}:${port}/${sqlfh} \033[0m"
 echo -e "管理账号:\033[31m ${adminuser} \033[0m     云端统一管理账号:\033[31m root \033[0m  \033[0m 数据库账号:\033[31m root \033[0m"
 echo -e "管理密码:\033[31m ${adminpass} \033[0m     云端统一管理密码:\033[31m ${pas} \033[0m\033[0m 数据库密码:\033[31m ${sqlpass} \033[0m"
 echo -e "\033[34m配置文件下载地址: \033[31m http://${IP}:${port}/xb-openvpn.tar.gz \033[0m"
-echo -e "\033[34m小白专版云端APP下载地址: \033[31m http://${IP}:${port}/APP.tar.gz \033[0m"
+echo -e "\033[34m玩东东专版云端APP下载地址: \033[31m http://${IP}:${port}/APP.tar.gz \033[0m"
 echo
-echo -e "\033[34m小白免流搭建流控™交流群：201320977 官网：xbmll.cn\033[0m"
+echo -e "\033[34m玩东东免流搭建流控™交流群：201320977 官网：xbmll.cn\033[0m"
 vpn >/dev/null 2>&1
 fi
 rm -rf url >/dev/null 2>&1
@@ -3126,4 +3126,4 @@ return 1
 }
 main
 exit 0;
-#版权所有：小白免流™
+#版权所有：玩东东免流™
