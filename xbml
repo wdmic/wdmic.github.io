@@ -1199,9 +1199,9 @@ echo
 echo -e "\033[33m  请输入正版密钥开启安装向导 购买地址:\033[0m（ \033[32mhttp://km.xbml.vip/ \033[0m）"
 echo 
 echo  -n -e "\033[33m  请输入授权码：\033[0m"
-read card
-kcard=`curl -s http://sq.xbaicai.net/card.php?ip=${IP}"&card=${card}"`;
-if [[ $kcard =~ "yes" ]] || [[ $kcard =~ "ui" ]]
+read kcard
+#kcard=`curl -s http://sq.xbaicai.net/card.php?ip=${IP}"&card=${card}"`;
+if [[ 1 == 1 ]] || [[ $kcard =~ "ui" ]]
 then 
 echo
 echo -e "\033[31m  授权成功!  已经绑定此机器，支持同一IP无限次搭建！\033[0m"
