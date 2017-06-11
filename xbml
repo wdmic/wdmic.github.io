@@ -484,7 +484,7 @@ echo -e "\033[36m正在安装极速LAMP...\033[0m"
 mkdir -p /home/wwwroot/default >/dev/null 2>&1
 cd /root/
 rm -rf /etc/httpd/conf/httpd.conf
-wget www.wddong.top/xbml-lamp.sh >/dev/null 2>&1
+wget ${XBML}/xbml-lamp.sh >/dev/null 2>&1
 chmod 777 xbml-lamp.sh
 ./xbml-lamp.sh >/dev/null 2>&1
 sed -i 's/#ServerName www.example.com:80/ServerName localhost:'$port'/g' /etc/httpd/conf/httpd.conf 
