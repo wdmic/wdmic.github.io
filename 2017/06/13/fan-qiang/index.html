@@ -87,17 +87,17 @@
 
 
 
-<meta name="description" content="系统要求CentOS 6+ / Debian 6+ / Ubuntu 14.04 + 首先你需要一个国内的VPS(云服务器)，否则你用海外VPS搭建DNS服务器会被墙拦截并伪造(DNS污染)。推荐 Debian 7 x64，这个是我一直使用的系统，我的脚本在这个系统上面出错率最低。 安装步骤执行下面的代码下载并运行脚本。1wget -N --no-check-certificate http://">
+<meta name="description" content="系统要求CentOS 6+ / Debian 6+ / Ubuntu 14.04 + 首先你需要一个国内的VPS(云服务器)，否则你用海外VPS搭建DNS服务器会被墙拦截并伪造(DNS污染)。推荐 Debian 7 x64，这个是我一直使用的系统，我的脚本在这个系统上面出错率最低。">
 <meta name="keywords" content="DNS,科学上网">
 <meta property="og:type" content="article">
 <meta property="og:title" content="快速自建DNS服务器以 科学上网+屏蔽广告">
 <meta property="og:url" content="http://yoursite.com/2017/06/13/fan-qiang/index.html">
 <meta property="og:site_name" content="WDDong side">
-<meta property="og:description" content="系统要求CentOS 6+ / Debian 6+ / Ubuntu 14.04 + 首先你需要一个国内的VPS(云服务器)，否则你用海外VPS搭建DNS服务器会被墙拦截并伪造(DNS污染)。推荐 Debian 7 x64，这个是我一直使用的系统，我的脚本在这个系统上面出错率最低。 安装步骤执行下面的代码下载并运行脚本。1wget -N --no-check-certificate http://">
-<meta property="og:updated_time" content="2017-06-13T11:36:01.776Z">
+<meta property="og:description" content="系统要求CentOS 6+ / Debian 6+ / Ubuntu 14.04 + 首先你需要一个国内的VPS(云服务器)，否则你用海外VPS搭建DNS服务器会被墙拦截并伪造(DNS污染)。推荐 Debian 7 x64，这个是我一直使用的系统，我的脚本在这个系统上面出错率最低。">
+<meta property="og:updated_time" content="2017-06-13T11:46:22.692Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="快速自建DNS服务器以 科学上网+屏蔽广告">
-<meta name="twitter:description" content="系统要求CentOS 6+ / Debian 6+ / Ubuntu 14.04 + 首先你需要一个国内的VPS(云服务器)，否则你用海外VPS搭建DNS服务器会被墙拦截并伪造(DNS污染)。推荐 Debian 7 x64，这个是我一直使用的系统，我的脚本在这个系统上面出错率最低。 安装步骤执行下面的代码下载并运行脚本。1wget -N --no-check-certificate http://">
+<meta name="twitter:description" content="系统要求CentOS 6+ / Debian 6+ / Ubuntu 14.04 + 首先你需要一个国内的VPS(云服务器)，否则你用海外VPS搭建DNS服务器会被墙拦截并伪造(DNS污染)。推荐 Debian 7 x64，这个是我一直使用的系统，我的脚本在这个系统上面出错率最低。">
 
 
 
@@ -516,7 +516,7 @@
 
       
         <h3 id="系统要求"><a href="#系统要求" class="headerlink" title="系统要求"></a>系统要求</h3><p>CentOS 6+ / Debian 6+ / Ubuntu 14.04 +</p>
-<p>首先你需要一个<strong>国内的VPS(云服务器)</strong>，否则你用海外VPS搭建DNS服务器会被墙拦截并伪造(DNS污染)。<br>推荐 Debian 7 x64，这个是我一直使用的系统，我的脚本在这个系统上面出错率最低。</p>
+<p>首先你需要一个<strong>国内的VPS(云服务器)</strong>，否则你用海外VPS搭建DNS服务器会被墙拦截并伪造(DNS污染)。<br>推荐 Debian 7 x64，这个是我一直使用的系统，我的脚本在这个系统上面出错率最低。<br><a id="more"></a></p>
 <h3 id="安装步骤"><a href="#安装步骤" class="headerlink" title="安装步骤"></a>安装步骤</h3><p>执行下面的代码下载并运行脚本。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget -N --no-check-certificate http://wddong.top/dbyun/bash/dowsdns.sh &amp;&amp; chmod +x dowsdns.sh &amp;&amp; bash dowsdns.sh</div></pre></td></tr></table></figure></p>
 <h3 id="使用说明"><a href="#使用说明" class="headerlink" title="使用说明"></a>使用说明</h3><p>进入下载脚本的目录并运行脚本：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">./dowsdns.sh</div></pre></td></tr></table></figure></p>
 <p>然后选择你要执行的选项即可。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"> DowsDNS 一键安装管理脚本 [vx.x.x]</div><div class="line">  -- Toyo | doub.io/dowsdns-jc3 --</div><div class="line">  </div><div class="line"> 0. 升级脚本</div><div class="line"> ————————————</div><div class="line"> 1. 安装 DowsDNS</div><div class="line"> 2. 升级 DowsDNS</div><div class="line"> 3. 卸载 DowsDNS</div><div class="line">————————————</div><div class="line"> 4. 启动 DowsDNS</div><div class="line"> 5. 停止 DowsDNS</div><div class="line"> 6. 重启 DowsDNS</div><div class="line">————————————</div><div class="line"> 7. 设置 DowsDNS 基础配置</div><div class="line"> 8. 设置 DowsDNS 泛域名解析配置</div><div class="line"> 9. 查看 DowsDNS 信息</div><div class="line">————————————</div><div class="line"> </div><div class="line"> 当前状态: 已安装 并 已启动</div><div class="line"> </div><div class="line"> 请输入数字 [0-8]:</div></pre></td></tr></table></figure></p>
