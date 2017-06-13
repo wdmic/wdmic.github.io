@@ -427,7 +427,7 @@
               
                 
                 <a class="post-title-link" href="/2017/06/13/fan-qiang/" itemprop="url">
-                  �����Խ�DNS�������� ��ѧ����+���ι���
+                  快速自建DNS服务器以 科学上网+屏蔽广告
                 </a>
               
             
@@ -466,8 +466,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/�̳�/" itemprop="url" rel="index">
-                    <span itemprop="name">�̳�</span>
+                  <a href="/categories/教程/" itemprop="url" rel="index">
+                    <span itemprop="name">教程</span>
                   </a>
                 </span>
 
@@ -485,7 +485,7 @@
 
           
           
-             <span id="/2017/06/13/fan-qiang/" class="leancloud_visitors" data-flag-title="�����Խ�DNS�������� ��ѧ����+���ι���">
+             <span id="/2017/06/13/fan-qiang/" class="leancloud_visitors" data-flag-title="快速自建DNS服务器以 科学上网+屏蔽广告">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -517,27 +517,27 @@
       
         
           
-            <p>###ϵͳҪ��<br>CentOS 6+ / Debian 6+ / Ubuntu 14.04 +</p>
-<p>��������Ҫһ��<strong>���ڵ�VPS(�Ʒ�����)</strong>���������ú���VPS�DNS�������ᱻǽ���ز�α��(DNS��Ⱦ)��<br>�Ƽ� Debian 7 x64����������һֱʹ�õ�ϵͳ���ҵĽű�������ϵͳ�������������͡�</p>
-<p>###��װ����<br>ִ�������Ĵ������ز����нű���<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget -N --no-check-certificate http://wddong.top/dbyun/bash/dowsdns.sh &amp;&amp; chmod +x dowsdns.sh &amp;&amp; bash dowsdns.sh</div></pre></td></tr></table></figure></p>
-<p>###ʹ��˵��<br>�������ؽű���Ŀ¼�����нű���<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">./dowsdns.sh</div></pre></td></tr></table></figure></p>
-<p>Ȼ��ѡ����Ҫִ�е�ѡ��ɡ�<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"> DowsDNS һ����װ�����ű� [vx.x.x]</div><div class="line">  -- Toyo | doub.io/dowsdns-jc3 --</div><div class="line">  </div><div class="line"> 0. �����ű�</div><div class="line"> ������������������������</div><div class="line"> 1. ��װ DowsDNS</div><div class="line"> 2. ���� DowsDNS</div><div class="line"> 3. ж�� DowsDNS</div><div class="line">������������������������</div><div class="line"> 4. ���� DowsDNS</div><div class="line"> 5. ֹͣ DowsDNS</div><div class="line"> 6. ���� DowsDNS</div><div class="line">������������������������</div><div class="line"> 7. ���� DowsDNS ��������</div><div class="line"> 8. ���� DowsDNS ��������������</div><div class="line"> 9. �鿴 DowsDNS ��Ϣ</div><div class="line">������������������������</div><div class="line"> </div><div class="line"> ��ǰ״̬: �Ѱ�װ �� ������</div><div class="line"> </div><div class="line"> ���������� [0-8]:</div></pre></td></tr></table></figure></p>
-<p>###��������<br><strong>����</strong>��service dowsdns start</p>
-<p><strong>ֹͣ</strong>��service dowsdns stop</p>
-<p><strong>����</strong>��service dowsdns restart</p>
-<p><strong>�鿴״̬</strong>��service dowsdns status</p>
-<p><strong>��װĿ¼</strong>��/usr/local/dowsDNS</p>
-<p><strong>�����ļ�</strong>��/usr/local/dowsDNS/conf/config.json</p>
-<p><strong>�Զ��巺���������ļ�</strong>��/usr/local/dowsDNS/data/wrcd.json</p>
-<p><strong>hosts�����ļ�</strong>��/usr/local/dowsDNS/conf/hosts_repository_config.json</p>
-<p>###����˵��</p>
-<p>####ʹ��SNI����˵��</p>
+            <p>###系统要求<br>CentOS 6+ / Debian 6+ / Ubuntu 14.04 +</p>
+<p>首先你需要一个<strong>国内的VPS(云服务器)</strong>，否则你用海外VPS搭建DNS服务器会被墙拦截并伪造(DNS污染)。<br>推荐 Debian 7 x64，这个是我一直使用的系统，我的脚本在这个系统上面出错率最低。</p>
+<p>###安装步骤<br>执行下面的代码下载并运行脚本。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">wget -N --no-check-certificate http://wddong.top/dbyun/bash/dowsdns.sh &amp;&amp; chmod +x dowsdns.sh &amp;&amp; bash dowsdns.sh</div></pre></td></tr></table></figure></p>
+<p>###使用说明<br>进入下载脚本的目录并运行脚本：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">./dowsdns.sh</div></pre></td></tr></table></figure></p>
+<p>然后选择你要执行的选项即可。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div></pre></td><td class="code"><pre><div class="line"> DowsDNS 一键安装管理脚本 [vx.x.x]</div><div class="line">  -- Toyo | doub.io/dowsdns-jc3 --</div><div class="line">  </div><div class="line"> 0. 升级脚本</div><div class="line"> ————————————</div><div class="line"> 1. 安装 DowsDNS</div><div class="line"> 2. 升级 DowsDNS</div><div class="line"> 3. 卸载 DowsDNS</div><div class="line">————————————</div><div class="line"> 4. 启动 DowsDNS</div><div class="line"> 5. 停止 DowsDNS</div><div class="line"> 6. 重启 DowsDNS</div><div class="line">————————————</div><div class="line"> 7. 设置 DowsDNS 基础配置</div><div class="line"> 8. 设置 DowsDNS 泛域名解析配置</div><div class="line"> 9. 查看 DowsDNS 信息</div><div class="line">————————————</div><div class="line"> </div><div class="line"> 当前状态: 已安装 并 已启动</div><div class="line"> </div><div class="line"> 请输入数字 [0-8]:</div></pre></td></tr></table></figure></p>
+<p>###其他操作<br><strong>启动</strong>：service dowsdns start</p>
+<p><strong>停止</strong>：service dowsdns stop</p>
+<p><strong>重启</strong>：service dowsdns restart</p>
+<p><strong>查看状态</strong>：service dowsdns status</p>
+<p><strong>安装目录</strong>：/usr/local/dowsDNS</p>
+<p><strong>配置文件</strong>：/usr/local/dowsDNS/conf/config.json</p>
+<p><strong>自定义泛解析域名文件</strong>：/usr/local/dowsDNS/data/wrcd.json</p>
+<p><strong>hosts配置文件</strong>：/usr/local/dowsDNS/conf/hosts_repository_config.json</p>
+<p>###其他说明</p>
+<p>####使用SNI代理说明</p>
 <blockquote>
-<p>ע�⣺�°汾��DowsDNS��֧���Զ��巺���������ģ�����ָ������Ҫ��IP��<br>���ǣ������㿪���� SNI�������ܺ�(config.json�����ļ��е�sni_proxy_on������true=������false=�ر�)��config.json�е�sni_proxy_ip������Ҳ����SNI����IP�ͻḲ����ĿǰDowsDNS���κ��Զ����������������ã������Դ��ķ�����������hosts�ļ����Ľ��������������Լ����Լ��ξͶ��ˡ�<br><strong>�Զ��巺�������������ļ�</strong>��/usr/local/dowsDNS/data/wrcd.json</p>
+<p>注意：新版本的DowsDNS是支持自定义泛域名解析的，可以指向你想要的IP。<br>但是，如果你开启了 SNI代理功能后(config.json配置文件中的sni_proxy_on参数，true=开启，false=关闭)，config.json中的sni_proxy_ip参数，也就是SNI代理IP就会覆盖你目前DowsDNS中任何自定义的域名解析配置（包括自带的泛域名解析和hosts文件里的解析），具体的自己多试几次就懂了。<br><strong>自定义泛解析域名配置文件</strong>：/usr/local/dowsDNS/data/wrcd.json</p>
 </blockquote>
-<p>####���ι���<br>�°汾��������ΪһЩԭ��ɾ�������ι�����hosts�����ļ�������ʧȥ�˹������ι��ܣ���������Ҫ�������ܣ���ô�ֶ������ϼ��ɡ�<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vi /usr/<span class="built_in">local</span>/dowsDNS/conf/hosts_repository_config.json</div></pre></td></tr></table></figure></p>
-<p>�����ļ��󣬰�<strong>I��</strong>�����༭ģʽ�����������Ĵ��뵽�ļ��У�����λ�ÿ�����ʾ�������Ӻ���<strong>ESC��</strong>�˳��༭ģʽ��Ȼ������<strong>:wq</strong>���沢�˳���<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="string">"adaway"</span>:<span class="string">"https://raw.githubusercontent.com/aoccin/adaway/master/hosts"</span></div><div class="line"><span class="comment"># �����д������ӵ��ļ���</span></div></pre></td></tr></table></figure></p>
-<p>ʾ�������ļ���ע�ⶺ�ţ���<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">	<span class="string">"hosts"</span>:&#123;</div><div class="line">		<span class="string">"racaljk"</span>:<span class="string">"https://github.com/racaljk/hosts/raw/master/hosts"</span>, <span class="comment"># ע��������ΪJSON��ʽ��������Ҫ����һ�� , ����</span></div><div class="line">		<span class="string">"adaway"</span>:<span class="string">"https://raw.githubusercontent.com/aoccin/adaway/master/hosts"</span> <span class="comment"># ������һ��������Ҫ���� , ����</span></div><div class="line">	&#125;,</div><div class="line">	<span class="string">"wrcd"</span>:<span class="string">"https://raw.githubusercontent.com/liuyunbin/dowsDNS/master/data/wrcd.json"</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>####屏蔽广告<br>新版本中作者因为一些原因删除了屏蔽广告的hosts在线文件，所以失去了广告屏蔽功能，如果你想要这个功能，那么手动添加上即可。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vi /usr/<span class="built_in">local</span>/dowsDNS/conf/hosts_repository_config.json</div></pre></td></tr></table></figure></p>
+<p>打开文件后，按<strong>I键</strong>进入编辑模式，添加下面的代码到文件中，添加位置看下面示例，添加后按<strong>ESC键</strong>退出编辑模式，然后输入<strong>:wq</strong>保存并退出。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="string">"adaway"</span>:<span class="string">"https://raw.githubusercontent.com/aoccin/adaway/master/hosts"</span></div><div class="line"><span class="comment"># 把这行代码添加到文件内</span></div></pre></td></tr></table></figure></p>
+<p>示例配置文件（注意逗号）：<br>···</p>
 
           
         
