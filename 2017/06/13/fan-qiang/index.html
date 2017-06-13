@@ -94,7 +94,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/06/13/fan-qiang/index.html">
 <meta property="og:site_name" content="WDDong side">
 <meta property="og:description" content="系统要求CentOS 6+ / Debian 6+ / Ubuntu 14.04 + 首先你需要一个国内的VPS(云服务器)，否则你用海外VPS搭建DNS服务器会被墙拦截并伪造(DNS污染)。推荐 Debian 7 x64，这个是我一直使用的系统，我的脚本在这个系统上面出错率最低。 安装步骤执行下面的代码下载并运行脚本。1wget -N --no-check-certificate http://">
-<meta property="og:updated_time" content="2017-06-13T11:33:05.006Z">
+<meta property="og:updated_time" content="2017-06-13T11:36:01.776Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="快速自建DNS服务器以 科学上网+屏蔽广告">
 <meta name="twitter:description" content="系统要求CentOS 6+ / Debian 6+ / Ubuntu 14.04 + 首先你需要一个国内的VPS(云服务器)，否则你用海外VPS搭建DNS服务器会被墙拦截并伪造(DNS污染)。推荐 Debian 7 x64，这个是我一直使用的系统，我的脚本在这个系统上面出错率最低。 安装步骤执行下面的代码下载并运行脚本。1wget -N --no-check-certificate http://">
@@ -529,11 +529,12 @@
 <p><strong>自定义泛解析域名文件</strong>：/usr/local/dowsDNS/data/wrcd.json</p>
 <p><strong>hosts配置文件</strong>：/usr/local/dowsDNS/conf/hosts_repository_config.json</p>
 <h3 id="其他说明"><a href="#其他说明" class="headerlink" title="其他说明"></a>其他说明</h3><h4 id="使用SNI代理说明"><a href="#使用SNI代理说明" class="headerlink" title="使用SNI代理说明"></a>使用SNI代理说明</h4><blockquote>
-<p>注意：新版本的DowsDNS是支持自定义泛域名解析的，可以指向你想要的IP。<br>但是，如果你开启了 SNI代理功能后(config.json配置文件中的sni_proxy_on参数，true=开启，false=关闭)，config.json中的sni_proxy_ip参数，也就是SNI代理IP就会覆盖你目前DowsDNS中任何自定义的域名解析配置（包括自带的泛域名解析和hosts文件里的解析），具体的自己多试几次就懂了。<br><strong>自定义泛解析域名配置文件</strong>：/usr/local/dowsDNS/data/wrcd.json</p>
+<p>注意：新版本的DowsDNS是支持自定义泛域名解析的，可以指向你想要的IP。<br>但是，如果你开启了 SNI代理功能后(config.json配置文件中的sni_proxy_on参数，true=开启，false=关闭)，config.json中的sni_proxy_ip参数，也就是SNI代理IP就会覆盖你目前DowsDNS中任何自定义的域名解析配置（包括自带的泛域名解析和hosts文件里的解析），具体的自己多试几次就懂了。</p>
 </blockquote>
+<p><strong>自定义泛解析域名配置文件</strong>：/usr/local/dowsDNS/data/wrcd.json</p>
 <h4 id="屏蔽广告"><a href="#屏蔽广告" class="headerlink" title="屏蔽广告"></a>屏蔽广告</h4><p>新版本中作者因为一些原因删除了屏蔽广告的hosts在线文件，所以失去了广告屏蔽功能，如果你想要这个功能，那么手动添加上即可。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vi /usr/<span class="built_in">local</span>/dowsDNS/conf/hosts_repository_config.json</div></pre></td></tr></table></figure></p>
-<p>打开文件后，按<strong>I键</strong>进入编辑模式，添加下面的代码到文件中，添加位置看下面示例，添加后按<strong>ESC键</strong>退出编辑模式，然后输入<strong>:wq</strong>保存并退出。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="string">"adaway"</span>:<span class="string">"https://raw.githubusercontent.com/aoccin/adaway/master/hosts"</span></div><div class="line"><span class="comment"># 把这行代码添加到文件内</span></div></pre></td></tr></table></figure></p>
-<p>示例配置文件（注意逗号）：<br>···</p>
+<p>打开文件后，按 <strong>I键</strong> 进入编辑模式，添加下面的代码到文件中，添加位置看下面示例，添加后按 <strong>ESC键</strong> 退出编辑模式，然后输入 <strong>:wq</strong> 保存并退出。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="string">"adaway"</span>:<span class="string">"https://raw.githubusercontent.com/aoccin/adaway/master/hosts"</span></div><div class="line"><span class="comment"># 把这行代码添加到文件内</span></div></pre></td></tr></table></figure></p>
+<p>示例配置文件（注意逗号）：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">	<span class="string">"hosts"</span>:&#123;</div><div class="line">		<span class="string">"racaljk"</span>:<span class="string">"https://github.com/racaljk/hosts/raw/master/hosts"</span>, <span class="comment"># 注意这里因为JSON格式，所以需要添加一个 , 逗号</span></div><div class="line">		<span class="string">"adaway"</span>:<span class="string">"https://raw.githubusercontent.com/aoccin/adaway/master/hosts"</span> <span class="comment"># 而最后一行则不需要添加 , 逗号</span></div><div class="line">	&#125;,</div><div class="line">	<span class="string">"wrcd"</span>:<span class="string">"https://raw.githubusercontent.com/liuyunbin/dowsDNS/master/data/wrcd.json"</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 
       
     </div>
