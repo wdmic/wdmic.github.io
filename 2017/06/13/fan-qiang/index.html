@@ -94,7 +94,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/06/13/fan-qiang/index.html">
 <meta property="og:site_name" content="WDDong side">
 <meta property="og:description" content="系统要求CentOS 6+ / Debian 6+ / Ubuntu 14.04 + 首先你需要一个国内的VPS(云服务器)，否则你用海外VPS搭建DNS服务器会被墙拦截并伪造(DNS污染)。推荐 Debian 7 x64，这个是我一直使用的系统，我的脚本在这个系统上面出错率最低。">
-<meta property="og:updated_time" content="2017-06-13T11:46:22.692Z">
+<meta property="og:updated_time" content="2017-06-14T15:32:57.134Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="快速自建DNS服务器以 科学上网+屏蔽广告">
 <meta name="twitter:description" content="系统要求CentOS 6+ / Debian 6+ / Ubuntu 14.04 + 首先你需要一个国内的VPS(云服务器)，否则你用海外VPS搭建DNS服务器会被墙拦截并伪造(DNS污染)。推荐 Debian 7 x64，这个是我一直使用的系统，我的脚本在这个系统上面出错率最低。">
@@ -535,6 +535,7 @@
 <h4 id="屏蔽广告"><a href="#屏蔽广告" class="headerlink" title="屏蔽广告"></a>屏蔽广告</h4><p>新版本中作者因为一些原因删除了屏蔽广告的hosts在线文件，所以失去了广告屏蔽功能，如果你想要这个功能，那么手动添加上即可。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">vi /usr/<span class="built_in">local</span>/dowsDNS/conf/hosts_repository_config.json</div></pre></td></tr></table></figure></p>
 <p>打开文件后，按 <strong>I键</strong> 进入编辑模式，添加下面的代码到文件中，添加位置看下面示例，添加后按 <strong>ESC键</strong> 退出编辑模式，然后输入 <strong>:wq</strong> 保存并退出。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="string">"adaway"</span>:<span class="string">"https://raw.githubusercontent.com/aoccin/adaway/master/hosts"</span></div><div class="line"><span class="comment"># 把这行代码添加到文件内</span></div></pre></td></tr></table></figure></p>
 <p>示例配置文件（注意逗号）：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">	<span class="string">"hosts"</span>:&#123;</div><div class="line">		<span class="string">"racaljk"</span>:<span class="string">"https://github.com/racaljk/hosts/raw/master/hosts"</span>, <span class="comment"># 注意这里因为JSON格式，所以需要添加一个 , 逗号</span></div><div class="line">		<span class="string">"adaway"</span>:<span class="string">"https://raw.githubusercontent.com/aoccin/adaway/master/hosts"</span> <span class="comment"># 而最后一行则不需要添加 , 逗号</span></div><div class="line">	&#125;,</div><div class="line">	<span class="string">"wrcd"</span>:<span class="string">"https://raw.githubusercontent.com/liuyunbin/dowsDNS/master/data/wrcd.json"</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>###文章来源：<a href="https://doub.io" target="_blank" rel="external">逗比根据地</a>&gt;&gt;<a href="https://doub.io/dowsdns-jc3/" target="_blank" rel="external">『原创』快速自建DNS服务器以 科学上网+屏蔽广告 —— dowsDNS 一键脚本</a></p>
 
       
     </div>
