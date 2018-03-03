@@ -379,6 +379,11 @@
 
 
           
+     
+       <div id="gitment-container"></div>
+     
+  </div>
+
 
         </div>
         
@@ -652,6 +657,26 @@
 
 
 
+     
+     
+     
+     
+     <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+     <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+     
+         <script type="text/javascript">
+             var gitment = new Gitment({
+                id: document.location.href, 
+                 owner: 'wdmic',
+                 repo: 'wdmic.github.io',
+                 oauth: {
+                     client_id: 'e804e8ddc88edde26d42',
+                     client_secret: 'e873f8b719961be8e2f83086e0934b03f5aa4e6a',
+                 }});
+             gitment.render('gitment-container');
+         </script>
+     
+ 
 
   
 
